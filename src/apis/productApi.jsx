@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const URL = import.meta.env.VITE_BASE_URL;
+console.log("Base URL:", URL);
 
 export const productApi = createApi({
   reducerPath: "products",
@@ -14,4 +15,4 @@ export const productApi = createApi({
     })
 })
 
-export const { useGetAllProductsQuery } = productApi;
+export const {useGetAllProductsQuery} = productApi;
